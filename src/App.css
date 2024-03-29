@@ -1,18 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+body{
+  font-family: 'Inter';
+  padding: 0vh 1vw;
+}
 .app{
   display: flex;
   flex-direction: row;
+ 
+}
 
+.app-name{
+  font-size: 2vw;
+  font-weight: 600;
+  letter-spacing: -1px;
 }
 
 .list{
-
-  background: #d1d1d1;
-  padding: 1vh 2vw;
-  margin: 1vh 2vw;
+  background: #f5f5f5;
+  padding: 1vh 0vw;
+  margin: 1vh 2vw 2vw 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid #d1d1d1;
+}
+.list-name{
+  margin-left: 2vw;
+  font-weight: 500;
+}
+.list-footer{
+  border-top: 1px solid #d1d1d1;
+  padding-top: 2vh;
+  padding: 2vh 1vw;
 }
 
 .card{
   background-color: white;
-  padding: 0 3vw;
-  margin: 2vh 0;
+  padding: 1vw 2vw;
+  margin: 2vh 2vw;
+  outline: none;
+  cursor:grab;
+  border-radius: 10px;
+  border: 1px solid #d1d1d1;
+  box-shadow: #0000000d 0px 2px 4px;
+}
+
+
+input{
+  font-family: 'Inter';
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  width: 320px;
+  background: #ffffff;
+  font-size: 0.875rem;
+  border-radius: 6px;
+  border:solid #cecece  1px;
+  outline: none;
+  box-shadow: #0000000d 0px 2px 4px;
+  transition: 0.3s all;
+}
+
+button{
+  font-family: 'Inter';
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  background: #293df0;
+  margin: 8px 0;
+  font-size: 0.875rem;
+  border-radius: 6px;
+  cursor: pointer;
+  border:solid #cecece  1px;
+  outline: none;
+  color: #ffffff;
+  box-shadow: #0000000d 0px 2px 4px;
+  transition: 0.3s all;
+}
+
+.delete-button{
+  background: rgb(218, 11, 11);
+  border: 0;
 }

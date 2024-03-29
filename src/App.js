@@ -117,7 +117,9 @@ function App() {
 
   return (
   <div>
+   <p className='app-name'>Task Board</p>
    <div className='app'>
+    
     <DataContext.Provider value={{data: data, addCard: addCard, deleteCard: deleteCard, moveCard: moveCard, handleDragStart: handleDragStart, handleDrop: handleDrop, handleDragOver: handleDragOver}} >
     
       {data.map(list => (
@@ -126,7 +128,7 @@ function App() {
 
     </DataContext.Provider>
    </div>
-   <input type="text" onChange={textHandler} value={list.name} name="" id="" />
+   <input type="text" placeholder='some list name ...' onChange={textHandler} value={list.name} name="" id="" />
     <button onClick={addList} >Create List</button>
    </div>
   );

@@ -13,11 +13,10 @@ export default function Card({ list, card}) {
         key={card.id}
         draggable
         onDragStart={() => source.handleDragStart(list.id, card.id)}
-        style={{ border: '1px solid black', marginBottom: '5px' }}
       >
         {card.name}
 
-        <button onClick={deleteCard}>Delete</button>
+        <button className='delete-button' onClick={deleteCard}>Delete</button>
       </div>
   )
 }

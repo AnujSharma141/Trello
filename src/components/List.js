@@ -23,14 +23,15 @@ export default function List({list}) {
    
   return (
     <div className='list' key={list.id} onDragOver={e => source.handleDragOver(e, list.id)} onDrop={e => source.handleDrop(e, list.id)}>
-    <h2>{list.name}</h2>
+    <h2 className='list-name'>{list.name}</h2>
     {list.data.map(card => (
               <Card list={list} card={card} key={card.id} />
       
     ))}
-  <input type="text" onChange={textHandler} name="" value={card.name} id="" />
+    <div className='list-footer'>
+    <input type="text" placeholder='some task ...' onChange={textHandler} name="" value={card.name} id="" />
     <button onClick={createCard} >Create Card</button>
-
+    </div>
     </div>
 
     
